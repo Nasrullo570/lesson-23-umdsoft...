@@ -3,5 +3,246 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+}
+
+span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #0070C1;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+header {
+  padding: 40px 0;
+}
+
+header .header .logo-img {
+  margin-right: 54px;
+}
+
+header .header .logo .menu ul li {
+  margin-right: 30px;
+}
+
+header .header .logo .menu ul li a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+header .header .logo .menu ul li a:hover {
+  color: #0070C1;
+}
+
+header .header .lang-ru {
+  margin-right: 30px;
+}
+
+header .header .lang-ru span {
+  margin-right: 4px;
+}
+
+header .header .lang .nomber {
+  margin-right: 20px;
+}
+
+header .header .lang button {
+  color: #fff;
+  background: #0070C1;
+  padding: 10px;
+  border: 0;
+  border-radius: 50px;
+  border: 1px solid #0070C1;
+  margin-right: 25px;
+}
+
+header .header .lang button:hover {
+  background: #fff;
+  color: #0070C1;
+  padding: 10px;
+  border: 1px solid #0070C1;
+  border-radius: 50px;
+}
+
+.info-text-top {
+  margin-bottom: 20px;
+}
+
+.info-text-top p {
+  font-size: 14px;
+}
+
+.info-text-top span {
+  cursor: pointer;
+  width: 100%;
+}
+
+.info-text-botom {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.info-text-botom-left {
+  width: 650px;
+}
+
+.info-text-botom-left h1 {
+  margin-bottom: 10px;
+}
+
+.info-text-botom-left p {
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-text-botom-left p svg {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.info-text-botom-left h3 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.info-text-botom-left .lesson {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.info-text-botom-left .lesson .lessons {
+  margin-right: 70px;
+}
+
+.info-text-botom-left .lesson .lessons h5 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #273747;
+}
+
+.info-text-botom-right {
+  width: 400px;
+  height: 450px;
+  background: #deeaf3;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.info-text-botom-right h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+}
+
+.info-text-botom-right P {
+  line-height: 20px;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.info-text-botom-right .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.info-text-botom-right .input input {
+  height: 40px;
+  border-radius: 50px;
+  border: 0;
+  margin-top: 10px;
+  padding: 13px 20px;
+}
+
+.info-text-botom-right .input input:focus {
+  outline: none;
+}
+
+.info-text-botom-right button {
+  color: #fff;
+  background: #0070C1;
+  padding: 10px;
+  border: 0;
+  border-radius: 50px;
+  border: 1px solid #0070C1;
+  margin-right: 25px;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.info-text-botom-right button:hover {
+  background: #fff;
+  color: #0070C1;
+  padding: 10px;
+  border: 1px solid #0070C1;
+  border-radius: 50px;
 }
 /*# sourceMappingURL=style.css.map */

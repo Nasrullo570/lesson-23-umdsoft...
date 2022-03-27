@@ -11,6 +11,10 @@
   margin: 0 auto;
 }
 
+button {
+  cursor: pointer;
+}
+
 ul li {
   list-style: none;
 }
