@@ -245,4 +245,69 @@ header .header .lang button:hover {
   border: 1px solid #0070C1;
   border-radius: 50px;
 }
+
+.contac .contacs {
+  margin-top: 50px;
+}
+
+.contac .contacs-menu {
+  margin-top: 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.contac .contacs-menu-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 450px;
+  margin-right: 140px;
+}
+
+.contac .contacs-menu-box-img {
+  width: 144px;
+  margin-right: 20px;
+}
+
+.contac .contacs-menu-box-tex h1 {
+  font-size: 25px;
+}
+
+.contac .contacs-menu-box-tex p {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.contents {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.content h1 {
+  margin-top: 100px;
+}
+
+.content-box {
+  margin-right: 30px;
+  width: 350px;
+  margin-top: 40px;
+  background: #E5F2F1;
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 126, 111, 0.08);
+          box-shadow: 0px 2px 8px rgba(0, 126, 111, 0.08);
+  border-radius: 20px;
+  padding: 15px 20px;
+}
+
+.content-box h5 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #273747;
+  margin-bottom: 10px;
+}
 /*# sourceMappingURL=style.css.map */
