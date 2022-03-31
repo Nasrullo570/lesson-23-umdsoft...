@@ -581,11 +581,188 @@ header .header .lang button:hover {
 .uz {
   background: #273747;
   height: 300px;
+  position: relative;
+  width: 100%;
 }
 
-.uz .uzz .k {
+.uz .img-uz {
+  position: absolute;
+  width: 100%;
+}
+
+.uz .uzz {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.uz .uzz .leff {
+  margin-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 260px;
-  background: #1E6BDD;
-  height: 300px;
+  height: 100%;
+  background: #0070C1;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.uz .uzz .leff button {
+  padding: 13px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  background: transparent;
+  border: 0;
+}
+
+.uz .uzz .leff button:first-child {
+  background: #105DCF;
+}
+
+.uz .uzz .leff button h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.uz .uzz .righh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.uz .uzz .righh .tolav {
+  margin-top: 20px;
+}
+
+.uz .uzz .righh .tolav h2 {
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 39px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.uz .uzz .righh .tolav h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 39px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+
+.uz .uzz .righh .tolav h5 {
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 39px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.uz .uzz .righh .tolav span {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 38px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.uz .uzz .righh .tolov-box {
+  margin-left: 100px;
+}
+
+.uz .uzz .righh .tolov-box h3 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.uz .uzz .righh .tolov-box .tolov-img {
+  background: #ECF4FF;
+  border-radius: 20px;
+  width: 400px;
+  padding: 24px;
+}
+
+.uz .uzz .righh .tolov-box .tolov-img img {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  width: 80px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+footer .footer-info {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+footer .footer-info-img {
+  margin-top: 12px;
+}
+
+footer .footer-info-box h1 {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+  color: #002A25;
+}
+
+footer .footer-info-box p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #0070C1;
+}
+
+footer .footer-bottom {
+  margin-top: 44px;
+  margin-bottom: 33px;
+}
+
+footer .footer-bottom-lef p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+footer .footer-bottom-rig span svg {
+  width: 35px;
+  margin-right: 20px;
 }
 /*# sourceMappingURL=style.css.map */

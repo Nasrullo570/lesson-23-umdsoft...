@@ -535,18 +535,22 @@ header {
     .min1 {
         &-lef {
             width: 550px;
+
             h1 {
                 font-weight: 600;
                 font-size: 36px;
                 line-height: 36px;
                 margin-bottom: 20px;
             }
-            p{
+
+            p {
                 margin-bottom: 50px;
             }
+
             .btn {
                 justify-content: flex-start;
                 margin-bottom: 40px;
+
                 button {
                     &:first-child {
                         color: #fff;
@@ -556,6 +560,7 @@ header {
                         border-radius: 50px;
                         border: 1px solid $gc;
                         margin-right: 25px;
+
                         &:hover {
                             background: #fff;
                             color: $gc;
@@ -563,15 +568,18 @@ header {
                             border-radius: 50px;
                         }
                     }
+
                     &:nth-child(2) {
                         background: #fff;
                         color: $gc;
-                        padding:7px 15px;
+                        padding: 7px 15px;
                         border: 1px solid $gc;
                         border-radius: 50px;
+
                         svg {
                             margin-right: 10px;
                         }
+
                         &:hover {
                             color: #fff;
                             background: $gc;
@@ -579,6 +587,7 @@ header {
                             // padding: 8px 15px;
                             border-radius: 50px;
                             margin-right: 25px;
+
                             svg {
                                 color: white;
                             }
@@ -587,8 +596,9 @@ header {
                 }
             }
         }
-        .righ{
-            img{
+
+        .righ {
+            img {
                 width: 600px;
             }
         }
@@ -597,14 +607,183 @@ header {
 
 
 
-.uz{
+.uz {
     background: #273747;
     height: 300px;
-    .uzz{
-        .k{
+    position: relative;
+    width: 100%;
+
+    .img-uz {
+        position: absolute;
+        width: 100%;
+
+
+    }
+
+    .uzz {
+        position: absolute;
+        display: flex;
+        // align-items: center;
+        height: 100%;
+
+        .leff {
+            margin-right: 50px;
+            display: flex;
+            flex-direction: column;
             width: 260px;
-            background: #1E6BDD;
-            height: 300px;
+            height: 100%;
+            background: $gc;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            button {
+                padding: 13px;
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: 0.03em;
+                color: #FFFFFF;
+                background: transparent;
+                border: 0;
+
+                &:first-child {
+                    background: #105DCF;
+                    ;
+                }
+
+                h5 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+            }
+
+
+
+
+        }
+
+        .righh {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .tolav {
+                margin-top: 20px;
+
+                h2 {
+                    font-weight: 600;
+                    font-size: 31px;
+                    line-height: 39px;
+                    letter-spacing: 0.03em;
+                    color: #FFFFFF;
+                }
+
+                h1 {
+                    font-weight: 600;
+                    font-size: 36px;
+                    line-height: 39px;
+                    letter-spacing: 0.03em;
+                    color: #FFFFFF;
+                    margin-top: 24px;
+                    margin-bottom: 30px;
+                }
+
+                h5 {
+                    font-weight: 600;
+                    font-size: 31px;
+                    line-height: 39px;
+                    letter-spacing: 0.03em;
+                    color: #FFFFFF;
+                }
+
+                span {
+                    font-weight: 600;
+                    font-size: 25px;
+                    line-height: 38px;
+                    letter-spacing: 0.03em;
+                    color: #FFFFFF;
+                }
+            }
+
+            .tolov-box {
+                margin-left: 100px;
+                h3 {
+                    margin-bottom: 30px;
+                    font-weight: 600;
+                    font-size: 25px;
+                    line-height: 31px;
+                    letter-spacing: 0.03em;
+                    color: #FFFFFF;
+                }
+
+                .tolov-img {
+                    background: #ECF4FF;
+                    border-radius: 20px;
+                    width: 400px;
+                    padding: 24px;
+                    img{
+                        padding-left: 10px;
+                        padding-bottom: 10px;
+                        width: 80px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+footer {
+    margin-top: 100px;
+    .footer {
+        &-info {
+            align-items: start;
+            &-img {
+                margin-top: 12px;
+            }
+
+            &-box {
+                h1 {
+                margin-bottom: 20px;
+                font-weight: 400;
+                    font-size: 20px;
+                    line-height: 31px;
+                    color: #002A25;
+
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #0070C1;
+
+                }
+
+            }
+        }
+        &-bottom{
+            margin-top: 44px;
+            margin-bottom: 33px;
+            &-lef{
+                p{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    color: rgba(0, 0, 0, 0.8);
+                }
+                
+            }
+            &-rig{
+                span{
+                    svg{
+                        width: 35px;
+                        margin-right: 20px;
+                    }
+                }
+            }
             
         }
     }
