@@ -282,19 +282,12 @@ header .header .lang button:hover {
   line-height: 20px;
 }
 
-.contents {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
 .content h1 {
   margin-top: 100px;
 }
 
 .content-box {
-  margin-right: 30px;
-  width: 350px;
+  width: 370px;
   margin-top: 40px;
   background: #E5F2F1;
   -webkit-box-shadow: 0px 2px 8px rgba(0, 126, 111, 0.08);
@@ -309,5 +302,290 @@ header .header .lang button:hover {
   line-height: 25px;
   color: #273747;
   margin-bottom: 10px;
+}
+
+.section {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.section h5 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.section .selecit-lef {
+  width: 650px;
+}
+
+.section .selecit-lef h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.section .selecit-lef p {
+  width: 500px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.section .selecit-lef .btn {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.section .selecit-lef .btn button:first-child {
+  color: #fff;
+  background: #0070C1;
+  padding: 10px;
+  border: 0;
+  border-radius: 50px;
+  border: 1px solid #0070C1;
+  margin-right: 25px;
+}
+
+.section .selecit-lef .btn button:first-child:hover {
+  background: #fff;
+  color: #0070C1;
+  padding: 10px;
+  border: 1px solid #0070C1;
+  border-radius: 50px;
+}
+
+.section .selecit-lef .btn button:nth-child(2) {
+  background: #fff;
+  color: #0070C1;
+  padding: 7px 15px;
+  border: 1px solid #0070C1;
+  border-radius: 50px;
+}
+
+.section .selecit-lef .btn button:nth-child(2) svg {
+  margin-right: 10px;
+}
+
+.section .selecit-lef .btn button:nth-child(2):hover {
+  color: #fff;
+  background: #0070C1;
+  border: 1px solid #0070C1;
+  border-radius: 50px;
+  margin-right: 25px;
+}
+
+.section .selecit-lef .btn button:nth-child(2):hover svg {
+  color: white;
+}
+
+.section .selecit-lef .d {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.section .selecit-lef .d .number {
+  margin-right: 100px;
+}
+
+.section .selecit-lef .d .number h2 {
+  margin-bottom: 10px;
+}
+
+.section .selecit-righ {
+  width: 450px;
+}
+
+.section .selecit-righ img {
+  width: 100%;
+}
+
+.umd {
+  margin-bottom: 60px;
+}
+
+.umd .umid-lef {
+  margin-right: 14px;
+}
+
+.umd .umid-righ h1 {
+  font-weight: 600;
+  font-size: 41px;
+  line-height: 57px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.umd .umid-righ h1 span {
+  font-weight: 600;
+  font-size: 41px;
+  line-height: 57px;
+  letter-spacing: 0.03em;
+}
+
+.umd .umid-righ h1 span:nth-child(2) {
+  color: #16ff16;
+}
+
+.corsel {
+  margin-bottom: 40px;
+}
+
+.corsel-main {
+  overflow-x: scroll;
+}
+
+.corsel-main-boxs {
+  border-radius: 20px;
+  margin-right: 20px;
+  padding: 30px;
+  background: #E8F1FF;
+}
+
+.corsel-main-boxs .flex {
+  width: 340px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.corsel-main-boxs .flex .img {
+  margin-right: 30px;
+}
+
+.corsel-main-boxs .flex .names h6 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 25px;
+  color: #273747;
+  margin-bottom: 10px;
+}
+
+.corsel-main-boxs .flex .names P {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: rgba(39, 55, 71, 0.6);
+}
+
+.mans .mansa {
+  overflow-x: scroll;
+  margin-bottom: 80px;
+}
+
+.mans .mansa-box {
+  margin-top: 90px;
+  min-width: 260px;
+  height: 200px;
+  margin-right: 70px;
+}
+
+.mans .mansa-box h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mans .mansa-box h4 svg {
+  margin-right: 20px;
+}
+
+.mans .mansa-box p {
+  margin-top: 20px;
+}
+
+.min .min1-lef {
+  width: 550px;
+}
+
+.min .min1-lef h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+
+.min .min1-lef p {
+  margin-bottom: 50px;
+}
+
+.min .min1-lef .btn {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.min .min1-lef .btn button:first-child {
+  color: #fff;
+  background: #0070C1;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 50px;
+  border: 1px solid #0070C1;
+  margin-right: 25px;
+}
+
+.min .min1-lef .btn button:first-child:hover {
+  background: #fff;
+  color: #0070C1;
+  border: 1px solid #0070C1;
+  border-radius: 50px;
+}
+
+.min .min1-lef .btn button:nth-child(2) {
+  background: #fff;
+  color: #0070C1;
+  padding: 7px 15px;
+  border: 1px solid #0070C1;
+  border-radius: 50px;
+}
+
+.min .min1-lef .btn button:nth-child(2) svg {
+  margin-right: 10px;
+}
+
+.min .min1-lef .btn button:nth-child(2):hover {
+  color: #fff;
+  background: #0070C1;
+  border: 1px solid #0070C1;
+  border-radius: 50px;
+  margin-right: 25px;
+}
+
+.min .min1-lef .btn button:nth-child(2):hover svg {
+  color: white;
+}
+
+.min .min1 .righ img {
+  width: 600px;
+}
+
+.uz {
+  background: #273747;
+  height: 300px;
+}
+
+.uz .uzz .k {
+  width: 260px;
+  background: #1E6BDD;
+  height: 300px;
 }
 /*# sourceMappingURL=style.css.map */
