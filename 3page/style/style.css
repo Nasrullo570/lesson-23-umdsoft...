@@ -246,6 +246,98 @@ header .header .lang button:hover {
   border-radius: 50px;
 }
 
+.boxss {
+  position: relative;
+  width: 100%;
+  background: #273747;
+  height: 300px;
+  padding: 15px;
+}
+
+.boxss img.imgs {
+  width: 100%;
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.boxss .boxses {
+  position: absolute;
+}
+
+.boxss .boxses-lef {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 270px;
+  margin-top: 80px;
+}
+
+.boxss .boxses-lef h1 {
+  width: 400px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.boxss .boxses-lef p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.boxss .boxses-rig {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+.boxss .boxses-rig .buttonn {
+  padding: 20px;
+}
+
+.boxss .boxses-rig .buttonn button {
+  margin-bottom: 30px;
+}
+
+.boxss .boxses-rig .buttonn button:first-child {
+  background: #1E6BDD;
+  border-radius: 50px;
+  padding: 10px;
+  border: 0;
+  color: #fff;
+}
+
+.boxss .boxses-rig .buttonn button:nth-child(2) {
+  border-radius: 50px;
+  border: 0;
+  color: #115AC7;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.boxss .boxses-rig .buttonn h2 {
+  margin-bottom: 10px;
+}
+
+.boxss .boxses-rig .buttonn h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .contac .contacs {
   margin-top: 50px;
 }
@@ -302,6 +394,161 @@ header .header .lang button:hover {
   line-height: 25px;
   color: #273747;
   margin-bottom: 10px;
+}
+
+.dasturs {
+  margin-top: 100px;
+  background: #273747;
+  height: 680px;
+  width: 100%;
+  position: relative;
+}
+
+.dasturs .imgu {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.dasturs .dastur {
+  position: absolute;
+  padding: 50px 0;
+}
+
+.dasturs .dastur .box {
+  width: 600px;
+}
+
+.dasturs .dastur .box h1 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.dasturs .dastur .box h2 {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.dasturs .dastur .modul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-top: 70px;
+}
+
+.dasturs .dastur .modul .bax {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dasturs .dastur .modul .bax h1 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.dasturs .dastur .modul .bax h2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  padding: 2px;
+  color: #00265C;
+  padding-left: 15px;
+}
+
+.dasturs .dastur .modul .bax span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #ffffff;
+  display: block;
+  padding-left: 15px;
+}
+
+.dasturs .dastur .modul .bax .modul1 {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6))), #1E6BDD;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), #1E6BDD;
+  width: 159px;
+  height: 42px;
+}
+
+.dasturs .dastur .modul .bax .modul1 h2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  padding: 2px;
+  color: #00265C;
+}
+
+.dasturs .dastur .modul .bax .modul2 {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), #1E6BDD;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), #1E6BDD;
+  width: 180px;
+  margin-top: 14px;
+  height: 73px;
+}
+
+.dasturs .dastur .modul .bax .modul2 span {
+  font-size: 16px;
+  font-weight: 16px;
+}
+
+.dasturs .dastur .modul .bax .modul3 {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), #1E6BDD;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), #1E6BDD;
+  width: 180px;
+  margin-top: 14px;
+  height: 128px;
+}
+
+.dasturs .dastur .modul .bax .modul4 {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), #1E6BDD;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), #1E6BDD;
+  width: 180px;
+  margin-top: 14px;
+  height: 184px;
+}
+
+.dasturs .dastur .modul .bax .modul5 {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), #1E6BDD;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #1E6BDD;
+  width: 180px;
+  margin-top: 14px;
+  height: 244px;
+}
+
+.dasturs .dastur .modul .bax .modul6 {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), #1E6BDD;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #1E6BDD;
+  width: 180px;
+  height: 297px;
+  margin-top: 14px;
+}
+
+.dasturs .dastur .modul .bax .modul7 {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.05)), to(rgba(255, 255, 255, 0.05))), #1E6BDD;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), #1E6BDD;
+  width: 180px;
+  margin-top: 14px;
+  height: 355px;
 }
 
 .section {
