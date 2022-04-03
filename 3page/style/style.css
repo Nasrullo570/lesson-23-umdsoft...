@@ -763,6 +763,87 @@ header .header .lang button:hover {
   margin-top: 20px;
 }
 
+.names .name .asos {
+  width: 600px;
+  height: 500px;
+  background: #E8F1FF;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.names .name .asos .flex h3 {
+  font-size: 21px;
+  line-height: 21px;
+  color: #273747;
+}
+
+.names .name .asos .bbb {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.names .name .asos .bbb .img {
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.names .name .asos .a .aa span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #1E6BDD;
+}
+
+.names .name .asos .a .aa p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #273747;
+}
+
+.names .name .asos .asass {
+  margin-top: 40px;
+}
+
+.names .name .asos .asass span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #1E6BDD;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.names .name .asos .asass h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #273747;
+  margin-bottom: 6px;
+}
+
+.names .name .asos .asass h2 svg {
+  margin-right: 8px;
+}
+
+.mmm h1 {
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+
+.mmm .flex {
+  margin-bottom: 50px;
+}
+
+.mmm .flex p {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 31px;
+  color: #1E6BDD;
+}
+
 .min .min1-lef {
   width: 550px;
 }
@@ -828,6 +909,52 @@ header .header .lang button:hover {
 
 .min .min1 .righ img {
   width: 600px;
+}
+
+.xa h3 {
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.xa h5 {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 46px;
+  letter-spacing: 0.03em;
+  color: #273747;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.xa h5 svg {
+  margin-right: 10px;
+}
+
+.xa div {
+  margin-bottom: 90px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.xa div span {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 51px;
+  letter-spacing: 0.03em;
+  color: #1E6BDD;
+}
+
+.xa div h1 {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
 }
 
 .uz {

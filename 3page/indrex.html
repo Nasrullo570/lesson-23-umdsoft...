@@ -1,1343 +1,1105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="container">
-        <div class="header flex">
-          <div class="logo flex">
-            <div class="logo-img">
-              <img src="img/logo.png" alt="" />
-            </div>
-            <div class="menu">
-              <ul class="flex">
-                <li><a href="">Tadbirlar</a></li>
-                <li><a href="">o'quv dasturi</a></li>
-                <li><a href="">Ish topish</a></li>
-              </ul>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header flex">
+        <div class="logo flex">
+          <div class="logo-img">
+            <img src="img/logo.png" alt="" />
           </div>
-          <div class="lang flex">
-            <div class="lang-ru">
-              <span>
-                <svg
-                  width="20"
-                  height="15"
-                  viewBox="0 0 20 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <rect
-                    x="0.5"
-                    y="0.5"
-                    width="19"
-                    height="14"
-                    fill="url(#pattern0)"
-                    stroke="#0501EB"
-                  />
-                  <defs>
-                    <pattern
-                      id="pattern0"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlink:href="#image0_263_811"
-                        transform="scale(0.0015625 0.00208333)"
-                      />
-                    </pattern>
-                    <image
-                      id="image0_263_811"
-                      width="640"
-                      height="480"
-                      xlink:href="data:image/png;base64,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"
-                    />
-                  </defs>
-                </svg>
-              </span>
-              RU
-            </div>
-            <div class="nomber">+998-00-000-00-00</div>
-            <button>Ro’yxatdan o’tish</button>
+          <div class="menu">
+            <ul class="flex">
+              <li><a href="">Tadbirlar</a></li>
+              <li><a href="">o'quv dasturi</a></li>
+              <li><a href="">Ish topish</a></li>
+            </ul>
           </div>
         </div>
-      </div>
-    </header>
-    <div class="info">
-      <div class="container">
-        <div class="info-text">
-          <div class="info-text-top">
-            <p>
-              <span>Bosh sahifa /</span>
-              <span>Yo’nalishlar /</span>
-              Grafik dizayn
-            </p>
+        <div class="lang flex">
+          <div class="lang-ru">
+            <span>
+              <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect x="0.5" y="0.5" width="19" height="14" fill="url(#pattern0)" stroke="#0501EB" />
+                <defs>
+                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_263_811" transform="scale(0.0015625 0.00208333)" />
+                  </pattern>
+                  <image id="image0_263_811" width="640" height="480"
+                    xlink:href="data:image/png;base64,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" />
+                </defs>
+              </svg>
+            </span>
+            RU
           </div>
-          <div class="info-text-botom flex">
-            <div class="info-text-botom-left">
-              <h1>
-                Zamonaviy buxgalteriya hisob kursi orqali buxgalteriya kasbini
-                o’rganing
-              </h1>
-              <p>
-                Biz sizga yuqori darajadagi talabga ega bo’lgan buxgalteriya
-                hisobi kursini taqdim etamiz bunda siz, zamonaviy buxgalteriya
-                hisobi va 1C ni to’liq o’zlashtirish, mehnat haqini hisoblash,
-                asosiy va aylanma vositalar hisobi, moliyaviy natijalar hisob va
-                h.klarni o’rganib chiqasiz. buxgalteriya kasbini kuchli
-                mentorlardan o’rganing va shu kasbni kuchli mutahasisiga
-                aylaning
-              </p>
-              <h3>Kursda nimalarni o’rganasiz?</h3>
-              <p>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289C16.3166 7.90237 15.6834 7.90237 15.2929 8.29289L10.5 13.0858L8.70709 11.2929C8.31656 10.9024 7.6834 10.9024 7.29287 11.2929C6.90235 11.6834 6.90235 12.3166 7.29287 12.7071L9.79287 15.2071C10.1834 15.5976 10.8166 15.5976 11.2071 15.2071L16.7071 9.70711Z"
-                    fill="#1E6BDD"
-                  />
-                </svg>
-                Pul mablag’lari va ularni ekvivalentlari hisobi
-              </p>
-              <p>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289C16.3166 7.90237 15.6834 7.90237 15.2929 8.29289L10.5 13.0858L8.70709 11.2929C8.31656 10.9024 7.6834 10.9024 7.29287 11.2929C6.90235 11.6834 6.90235 12.3166 7.29287 12.7071L9.79287 15.2071C10.1834 15.5976 10.8166 15.5976 11.2071 15.2071L16.7071 9.70711Z"
-                    fill="#1E6BDD"
-                  />
-                </svg>
-                Mehnat haqini hisoblash
-              </p>
-              <p>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289C16.3166 7.90237 15.6834 7.90237 15.2929 8.29289L10.5 13.0858L8.70709 11.2929C8.31656 10.9024 7.6834 10.9024 7.29287 11.2929C6.90235 11.6834 6.90235 12.3166 7.29287 12.7071L9.79287 15.2071C10.1834 15.5976 10.8166 15.5976 11.2071 15.2071L16.7071 9.70711Z"
-                    fill="#1E6BDD"
-                  />
-                </svg>
-                Asosiy va aylanma vositalar hisobi
-              </p>
-              <p>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289C16.3166 7.90237 15.6834 7.90237 15.2929 8.29289L10.5 13.0858L8.70709 11.2929C8.31656 10.9024 7.6834 10.9024 7.29287 11.2929C6.90235 11.6834 6.90235 12.3166 7.29287 12.7071L9.79287 15.2071C10.1834 15.5976 10.8166 15.5976 11.2071 15.2071L16.7071 9.70711Z"
-                    fill="#1E6BDD"
-                  />
-                </svg>
-                Ishlab chiqarish harajatlari hisobi va tannarx kalkulyatsiyasi
-              </p>
-              <p>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289C16.3166 7.90237 15.6834 7.90237 15.2929 8.29289L10.5 13.0858L8.70709 11.2929C8.31656 10.9024 7.6834 10.9024 7.29287 11.2929C6.90235 11.6834 6.90235 12.3166 7.29287 12.7071L9.79287 15.2071C10.1834 15.5976 10.8166 15.5976 11.2071 15.2071L16.7071 9.70711Z"
-                    fill="#1E6BDD"
-                  />
-                </svg>
-                Schetlar rejasi (buxgalteriya o’tkazmalari) bilan ishlash
-              </p>
-              <p>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289C16.3166 7.90237 15.6834 7.90237 15.2929 8.29289L10.5 13.0858L8.70709 11.2929C8.31656 10.9024 7.6834 10.9024 7.29287 11.2929C6.90235 11.6834 6.90235 12.3166 7.29287 12.7071L9.79287 15.2071C10.1834 15.5976 10.8166 15.5976 11.2071 15.2071L16.7071 9.70711Z"
-                    fill="#1E6BDD"
-                  />
-                </svg>
-                Moliyaviy natijalar hisobi
-              </p>
-              <p>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289C16.3166 7.90237 15.6834 7.90237 15.2929 8.29289L10.5 13.0858L8.70709 11.2929C8.31656 10.9024 7.6834 10.9024 7.29287 11.2929C6.90235 11.6834 6.90235 12.3166 7.29287 12.7071L9.79287 15.2071C10.1834 15.5976 10.8166 15.5976 11.2071 15.2071L16.7071 9.70711Z"
-                    fill="#1E6BDD"
-                  />
-                </svg>
-                Soliqlar va ularning turkumlanishi
-              </p>
-              <p>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289C16.3166 7.90237 15.6834 7.90237 15.2929 8.29289L10.5 13.0858L8.70709 11.2929C8.31656 10.9024 7.6834 10.9024 7.29287 11.2929C6.90235 11.6834 6.90235 12.3166 7.29287 12.7071L9.79287 15.2071C10.1834 15.5976 10.8166 15.5976 11.2071 15.2071L16.7071 9.70711Z"
-                    fill="#1E6BDD"
-                  />
-                </svg>
-                Soliq hisobotlarini to’ldirish (my.soliq.uz platformasida) va
-                jo’natish tartibi
-              </p>
-              <div class="lesson">
-                <div class="lessons">
-                  <h5>Darslar vaqti</h5>
-                  <span>Haftada 3 kun 3 soat </span>
-                </div>
-                <div class="lessons">
-                  <h5>Kafolat</h5>
-                  <span>Mahsus sertifikat</span>
-                </div>
-              </div>
-            </div>
-            <div class="info-text-botom-right">
-              <h3>Kurslarimizga yoziling</h3>
-              <p>
-                Trening boshlanishi: <span>13 dekabr </span><br />
-                davomiyligi: 2 oy
-              </p>
-              <div class="input">
-                Ism
-                <input type="text" placeholder="Ismingizni yozing..." />
-              </div>
-              <div class="input">
-                Tel raqam
-                <input type="text" placeholder="+998-00-000-00-00" />
-              </div>
-              <button>Batafsil ma’lumot</button>
-            </div>
-          </div>
-
-          <div></div>
+          <div class="nomber">+998-00-000-00-00</div>
+          <button>Ro’yxatdan o’tish</button>
         </div>
       </div>
     </div>
-    <div class="boxss">
-      <div class="container">
-        <div class="boxs">
-          <img class="imgs" src="img/Vector 5.png" alt="" />
-          <div class="boxses flex">
-            <div class="boxses-lef">
-              <h1>Full Stack Web dasturchilar qancha maosh olishadi?</h1>
-              <p>Manba: hh.uz va Ustoz Shogird telegram kanallari asosida</p>
-            </div>
-            <div class="boxses-rig">
-              <div class="buttonn">
-                <button>Junior dasturchi</button>
-                <button>Middle+ dasturchi</button>
-                <h2>2 000 000 - 3 000 000 UZS</h2>
-                <h3>o’rtacha oylik maosh</h3>
-              </div>
-            </div>
-          </div>
+  </header>
+  <div class="info">
+    <div class="container">
+      <div class="info-text">
+        <div class="info-text-top">
+          <p>
+            <span>Bosh sahifa /</span>
+            <span>Yo’nalishlar /</span>
+            Grafik dizayn
+          </p>
         </div>
-      </div>
-    </div>
-    <div class="contac">
-      <div class="container">
-        <div class="contacs">
-          <h1>Kursda sizni nima kutmoqda</h1>
-          <div class="contacs-menu flex">
-            <div class="contacs-menu-box">
-              <div class="contacs-menu-box-img">
-                <img src="img/contac-img1.png" alt="" />
-              </div>
-              <div class="contacs-menu-box-tex">
-                <h1>Strukturaviy nazariya</h1>
-                <p>
-                  Har bir bo’limning boshida siz nazariyani o’rganasiz - matnli
-                  materiallar, skrinshotlar va mavzu bo’yicha maqolalar
-                </p>
-              </div>
-            </div>
-            <div class="contacs-menu-box">
-              <div class="contacs-menu-box-img">
-                <img src="img/contac-img2.png" alt="" />
-              </div>
-              <div class="contacs-menu-box-tex">
-                <h1>Amaliyot</h1>
-                <p>
-                  Nazariyani o’rganganingizdan so’ng, siz uy vazifasini
-                  bajarasiz, unda siz loyihangiz ustida ishlaysiz va tajriba
-                  orttirasiz
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="contacs-menu flex">
-            <div class="contacs-menu-box">
-              <div class="contacs-menu-box-img">
-                <img src="img/contac-img3.png" alt="" />
-              </div>
-              <div class="contacs-menu-box-tex">
-                <h1>Strukturaviy nazariya</h1>
-                <p>
-                  Har bir bo’limning boshida siz nazariyani o’rganasiz - matnli
-                  materiallar, skrinshotlar va mavzu bo’yicha maqolalar
-                </p>
-              </div>
-            </div>
-            <div class="contacs-menu-box">
-              <div class="contacs-menu-box-img">
-                <img src="img/contac-img4.png" alt="" />
-              </div>
-              <div class="contacs-menu-box-tex">
-                <h1>Strukturaviy nazariya</h1>
-                <p>
-                  Har bir bo’limning boshida siz nazariyani o’rganasiz - matnli
-                  materiallar, skrinshotlar va mavzu bo’yicha maqolalar
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content">
-      <div class="container">
-        <h1>Bu kurs kimlar uchun?</h1>
-        <div class="contents flex">
-          <div class="content-box">
-            <div class="content-box-tex">
-              <h5>Web dasturlashni 0dan boshlaganlar uchun</h5>
-              <span
-                >Web dasturlashni 0 dan pro darajagacha chiqishingizga bu kurs
-                judayam katta yordam beradi.</span
-              >
-            </div>
-          </div>
-          <div class="content-box">
-            <div class="content-box-tex">
-              <h5>Doimiy ish o’rniga ega bo’lishni xoxlovchilar uchun</h5>
-              <span
-                >Siz o’z tajribangizni oshirishni maqsad qilgan bo’lsangiz bu
-                kurs aynan siz uchun, ha to’gri eshitdingiz siz uchun</span
-              >
-            </div>
-          </div>
-          <div class="content-box">
-            <div class="content-box-tex">
-              <h5>Frilancer bo’lib ishlashni xoxlaganlar uchun</h5>
-              <span
-                >Siz bu kursimizda bemalol masofadan ishlang va o’zingiz uchun
-                ishlang va dizaynda barchani hayratlantiring</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="dasturs">
-      <img class="imgu" src="img/Vector 8.png" alt="" />
-      <div class="container">
-        <div class="dastur">
-          <div class="box">
-            <h1>O’quv dasturi qanday olib boriladi?</h1>
-            <h2>
-              O’quv dasturi modullarga bo’lingan holatda olib boriladi va har
-              bir modul oxirida imtixon bo’ladi. Har bir modulni alohida mentor
-              o’tadi.
-            </h2>
-          </div>
-
-          <div class="modul">
-            <div class="bax">
-              <h1>1- modul</h1>
-              <div class="modul1">
-                <h2>Dasturlash asoslari</h2>
-              </div>
-            </div>
-
-            <div class="bax">
-              <h1>2- modul</h1>
-              <div class="modul2">
-                <h2>Maketda ishlash</h2>
-                <span> HTML CSS Sass Git </span>
-              </div>
-            </div>
-            <div class="bax">
-              <h1>3- modul</h1>
-              <div class="modul3">
-                <h2>JavaScript</h2>
-                <span> JavaScript basic </span> <span> JavaScript DOM </span>
-                <span> JavaScript OOP </span>
-              </div>
-            </div>
-
-            <div class="bax">
-              <h1>4- modul</h1>
-              <div class="modul4">
-                <h2>VueJS</h2>
-                <span> VueJS </span> <span> NuxtJS </span>
-                <span> REST API </span>
-              </div>
-            </div>
-            <div class="bax">
-              <h1>5- modul</h1>
-
-              <div class="modul5">
-                <h2>NodeJS</h2>
-                <span> NodeJS </span> <span> ExpressJS </span>
-                <span> Loyihalash </span> <span> Clean code </span>
-              </div>
-            </div>
-            <div class="bax">
-              <h1>6- modul</h1>
-              <div class="modul6">
-                <h2>Database</h2>
-                <span> NoSQL </span> <span> SQL </span>
-              </div>
-            </div>
-            <div class="bax">
-              <h1>7- modul</h1>
-              <div class="modul7">
-                <h2>Final</h2>
-                <span> DevOPS </span> <span> Yakuniy imtixon </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="container">
-        <h5>Natija</h5>
-        <div class="selecit flex">
-          <div class="selecit-lef">
-            <h2>Lorem ipsum dolor sit amet consec amet dolor sit colo</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
-              consectetur Lorem ipsum.
-            </p>
-            <div class="btn flex">
-              <button>Kursga yozilish</button>
-              <button class="flex">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19.376 12.4159L8.777 19.4819C8.70171 19.5321 8.61423 19.5608 8.52389 19.5651C8.43355 19.5694 8.34373 19.5492 8.264 19.5065C8.18427 19.4638 8.1176 19.4003 8.07111 19.3227C8.02462 19.2451 8.00005 19.1564 8 19.0659V4.93395C8.00005 4.8435 8.02462 4.75477 8.07111 4.67719C8.1176 4.59961 8.18427 4.53609 8.264 4.49341C8.34373 4.45072 8.43355 4.43045 8.52389 4.43478C8.61423 4.4391 8.70171 4.46784 8.777 4.51795L19.376 11.5839C19.4445 11.6296 19.5006 11.6915 19.5395 11.764C19.5783 11.8366 19.5986 11.9176 19.5986 11.9999C19.5986 12.0823 19.5783 12.1633 19.5395 12.2359C19.5006 12.3084 19.4445 12.3703 19.376 12.4159Z"
-                    fill="#1E6BDD"
-                  />
-                </svg>
-                Videoni ko’rish
-              </button>
-            </div>
-            <div class="d flex">
-              <div class="number">
-                <h2>94K</h2>
-                <span> ishga joylashgan </span>
-              </div>
-              <div class="number">
-                <h2>15K</h2>
-                <span> O’qiyotgan </span>
-              </div>
-              <div class="number">
-                <h2>2K+</h2>
-                <span> O’qiyotgan </span>
-              </div>
-            </div>
-          </div>
-          <div class="selecit-righ">
-            <img src="img/selecit.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="umd">
-      <div class="container">
-        <div class="umid flex">
-          <div class="umid-lef">
-            <img src="img/umid.png" alt="" />
-          </div>
-          <div class="umid-righ">
+        <div class="info-text-botom flex">
+          <div class="info-text-botom-left">
             <h1>
-              Kursni tugatgandan so’ng <span>UMDSOFT </span> va
-              <span> IT Park </span>
-              tomonidan maxsus sertifikat beriladi
+              Zamonaviy buxgalteriya hisob kursi orqali buxgalteriya kasbini
+              o’rganing
             </h1>
             <p>
-              *Bu Sertifikat ta’lim to’g’risidagi hujjat emas. Bu dasturlashni
-              qay darajada bilishingizni anglatuvchi ma’lumotnoma.
+              Biz sizga yuqori darajadagi talabga ega bo’lgan buxgalteriya
+              hisobi kursini taqdim etamiz bunda siz, zamonaviy buxgalteriya
+              hisobi va 1C ni to’liq o’zlashtirish, mehnat haqini hisoblash,
+              asosiy va aylanma vositalar hisobi, moliyaviy natijalar hisob va
+              h.klarni o’rganib chiqasiz. buxgalteriya kasbini kuchli
+              mentorlardan o’rganing va shu kasbni kuchli mutahasisiga
+              aylaning
             </p>
+            <h3>Kursda nimalarni o’rganasiz?</h3>
+            <p>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289C16.3166 7.90237 15.6834 7.90237 15.2929 8.29289L10.5 13.0858L8.70709 11.2929C8.31656 10.9024 7.6834 10.9024 7.29287 11.2929C6.90235 11.6834 6.90235 12.3166 7.29287 12.7071L9.79287 15.2071C10.1834 15.5976 10.8166 15.5976 11.2071 15.2071L16.7071 9.70711Z"
+                  fill="#1E6BDD" />
+              </svg>
+              Pul mablag’lari va ularni ekvivalentlari hisobi
+            </p>
+            <p>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289C16.3166 7.90237 15.6834 7.90237 15.2929 8.29289L10.5 13.0858L8.70709 11.2929C8.31656 10.9024 7.6834 10.9024 7.29287 11.2929C6.90235 11.6834 6.90235 12.3166 7.29287 12.7071L9.79287 15.2071C10.1834 15.5976 10.8166 15.5976 11.2071 15.2071L16.7071 9.70711Z"
+                  fill="#1E6BDD" />
+              </svg>
+              Mehnat haqini hisoblash
+            </p>
+            <p>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289C16.3166 7.90237 15.6834 7.90237 15.2929 8.29289L10.5 13.0858L8.70709 11.2929C8.31656 10.9024 7.6834 10.9024 7.29287 11.2929C6.90235 11.6834 6.90235 12.3166 7.29287 12.7071L9.79287 15.2071C10.1834 15.5976 10.8166 15.5976 11.2071 15.2071L16.7071 9.70711Z"
+                  fill="#1E6BDD" />
+              </svg>
+              Asosiy va aylanma vositalar hisobi
+            </p>
+            <p>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289C16.3166 7.90237 15.6834 7.90237 15.2929 8.29289L10.5 13.0858L8.70709 11.2929C8.31656 10.9024 7.6834 10.9024 7.29287 11.2929C6.90235 11.6834 6.90235 12.3166 7.29287 12.7071L9.79287 15.2071C10.1834 15.5976 10.8166 15.5976 11.2071 15.2071L16.7071 9.70711Z"
+                  fill="#1E6BDD" />
+              </svg>
+              Ishlab chiqarish harajatlari hisobi va tannarx kalkulyatsiyasi
+            </p>
+            <p>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289C16.3166 7.90237 15.6834 7.90237 15.2929 8.29289L10.5 13.0858L8.70709 11.2929C8.31656 10.9024 7.6834 10.9024 7.29287 11.2929C6.90235 11.6834 6.90235 12.3166 7.29287 12.7071L9.79287 15.2071C10.1834 15.5976 10.8166 15.5976 11.2071 15.2071L16.7071 9.70711Z"
+                  fill="#1E6BDD" />
+              </svg>
+              Schetlar rejasi (buxgalteriya o’tkazmalari) bilan ishlash
+            </p>
+            <p>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289C16.3166 7.90237 15.6834 7.90237 15.2929 8.29289L10.5 13.0858L8.70709 11.2929C8.31656 10.9024 7.6834 10.9024 7.29287 11.2929C6.90235 11.6834 6.90235 12.3166 7.29287 12.7071L9.79287 15.2071C10.1834 15.5976 10.8166 15.5976 11.2071 15.2071L16.7071 9.70711Z"
+                  fill="#1E6BDD" />
+              </svg>
+              Moliyaviy natijalar hisobi
+            </p>
+            <p>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289C16.3166 7.90237 15.6834 7.90237 15.2929 8.29289L10.5 13.0858L8.70709 11.2929C8.31656 10.9024 7.6834 10.9024 7.29287 11.2929C6.90235 11.6834 6.90235 12.3166 7.29287 12.7071L9.79287 15.2071C10.1834 15.5976 10.8166 15.5976 11.2071 15.2071L16.7071 9.70711Z"
+                  fill="#1E6BDD" />
+              </svg>
+              Soliqlar va ularning turkumlanishi
+            </p>
+            <p>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM16.7071 9.70711C17.0976 9.31658 17.0976 8.68342 16.7071 8.29289C16.3166 7.90237 15.6834 7.90237 15.2929 8.29289L10.5 13.0858L8.70709 11.2929C8.31656 10.9024 7.6834 10.9024 7.29287 11.2929C6.90235 11.6834 6.90235 12.3166 7.29287 12.7071L9.79287 15.2071C10.1834 15.5976 10.8166 15.5976 11.2071 15.2071L16.7071 9.70711Z"
+                  fill="#1E6BDD" />
+              </svg>
+              Soliq hisobotlarini to’ldirish (my.soliq.uz platformasida) va
+              jo’natish tartibi
+            </p>
+            <div class="lesson">
+              <div class="lessons">
+                <h5>Darslar vaqti</h5>
+                <span>Haftada 3 kun 3 soat </span>
+              </div>
+              <div class="lessons">
+                <h5>Kafolat</h5>
+                <span>Mahsus sertifikat</span>
+              </div>
+            </div>
+          </div>
+          <div class="info-text-botom-right">
+            <h3>Kurslarimizga yoziling</h3>
+            <p>
+              Trening boshlanishi: <span>13 dekabr </span><br />
+              davomiyligi: 2 oy
+            </p>
+            <div class="input">
+              Ism
+              <input type="text" placeholder="Ismingizni yozing..." />
+            </div>
+            <div class="input">
+              Tel raqam
+              <input type="text" placeholder="+998-00-000-00-00" />
+            </div>
+            <button>Batafsil ma’lumot</button>
+          </div>
+        </div>
+
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <div class="boxss">
+    <div class="container">
+      <div class="boxs">
+        <img class="imgs" src="img/Vector 5.png" alt="" />
+        <div class="boxses flex">
+          <div class="boxses-lef">
+            <h1>Full Stack Web dasturchilar qancha maosh olishadi?</h1>
+            <p>Manba: hh.uz va Ustoz Shogird telegram kanallari asosida</p>
+          </div>
+          <div class="boxses-rig">
+            <div class="buttonn">
+              <button>Junior dasturchi</button>
+              <button>Middle+ dasturchi</button>
+              <h2>2 000 000 - 3 000 000 UZS</h2>
+              <h3>o’rtacha oylik maosh</h3>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="corsel">
-      <div class="container">
-        <h1>O’quvchilar fikri</h1>
-        <div class="corsel-main flex">
-          <div class="corsel-main-boxs">
-            <div class="flex">
-              <div class="img">
-                <img src="img/contac-img.png" alt="" />
-              </div>
-              <div class="names">
-                <h6>Farrux Bozorboyev</h6>
-                <p>Senior | Web Designer</p>
-              </div>
+  </div>
+  <div class="contac">
+    <div class="container">
+      <div class="contacs">
+        <h1>Kursda sizni nima kutmoqda</h1>
+        <div class="contacs-menu flex">
+          <div class="contacs-menu-box">
+            <div class="contacs-menu-box-img">
+              <img src="img/contac-img1.png" alt="" />
             </div>
-            <span>
-              Ismim Farrux UI/UX Web designerman 8yildan beri bu sohada ishlab
-              o’sib kelybman. Maqsadim Siz azizlarimni pro darajaga chiqarishni
-              maqsad qilganman
-            </span>
+            <div class="contacs-menu-box-tex">
+              <h1>Strukturaviy nazariya</h1>
+              <p>
+                Har bir bo’limning boshida siz nazariyani o’rganasiz - matnli
+                materiallar, skrinshotlar va mavzu bo’yicha maqolalar
+              </p>
+            </div>
           </div>
-          <div class="corsel-main-boxs">
-            <div class="flex">
-              <div class="img">
-                <img src="img/contac-img.png" alt="" />
-              </div>
-              <div class="names">
-                <h6>Farrux Bozorboyev</h6>
-                <p>Senior | Web Designer</p>
-              </div>
+          <div class="contacs-menu-box">
+            <div class="contacs-menu-box-img">
+              <img src="img/contac-img2.png" alt="" />
             </div>
-            <span>
-              Ismim Farrux UI/UX Web designerman 8yildan beri bu sohada ishlab
-              o’sib kelybman. Maqsadim Siz azizlarimni pro darajaga chiqarishni
-              maqsad qilganman
-            </span>
+            <div class="contacs-menu-box-tex">
+              <h1>Amaliyot</h1>
+              <p>
+                Nazariyani o’rganganingizdan so’ng, siz uy vazifasini
+                bajarasiz, unda siz loyihangiz ustida ishlaysiz va tajriba
+                orttirasiz
+              </p>
+            </div>
           </div>
-          <div class="corsel-main-boxs">
-            <div class="flex">
-              <div class="img">
-                <img src="img/contac-img.png" alt="" />
-              </div>
-              <div class="names">
-                <h6>Farrux Bozorboyev</h6>
-                <p>Senior | Web Designer</p>
-              </div>
+        </div>
+        <div class="contacs-menu flex">
+          <div class="contacs-menu-box">
+            <div class="contacs-menu-box-img">
+              <img src="img/contac-img3.png" alt="" />
             </div>
-            <span>
-              Ismim Farrux UI/UX Web designerman 8yildan beri bu sohada ishlab
-              o’sib kelybman. Maqsadim Siz azizlarimni pro darajaga chiqarishni
-              maqsad qilganman
-            </span>
+            <div class="contacs-menu-box-tex">
+              <h1>Strukturaviy nazariya</h1>
+              <p>
+                Har bir bo’limning boshida siz nazariyani o’rganasiz - matnli
+                materiallar, skrinshotlar va mavzu bo’yicha maqolalar
+              </p>
+            </div>
           </div>
-          <div class="corsel-main-boxs">
-            <div class="flex">
-              <div class="img">
-                <img src="img/contac-img.png" alt="" />
-              </div>
-              <div class="names">
-                <h6>Farrux Bozorboyev</h6>
-                <p>Senior | Web Designer</p>
-              </div>
+          <div class="contacs-menu-box">
+            <div class="contacs-menu-box-img">
+              <img src="img/contac-img4.png" alt="" />
             </div>
-            <span>
-              Ismim Farrux UI/UX Web designerman 8yildan beri bu sohada ishlab
-              o’sib kelybman. Maqsadim Siz azizlarimni pro darajaga chiqarishni
-              maqsad qilganman
-            </span>
-          </div>
-          <div class="corsel-main-boxs">
-            <div class="flex">
-              <div class="img">
-                <img src="img/contac-img.png" alt="" />
-              </div>
-              <div class="names">
-                <h6>Farrux Bozorboyev</h6>
-                <p>Senior | Web Designer</p>
-              </div>
+            <div class="contacs-menu-box-tex">
+              <h1>Strukturaviy nazariya</h1>
+              <p>
+                Har bir bo’limning boshida siz nazariyani o’rganasiz - matnli
+                materiallar, skrinshotlar va mavzu bo’yicha maqolalar
+              </p>
             </div>
-            <span>
-              Ismim Farrux UI/UX Web designerman 8yildan beri bu sohada ishlab
-              o’sib kelybman. Maqsadim Siz azizlarimni pro darajaga chiqarishni
-              maqsad qilganman
-            </span>
-          </div>
-          <div class="corsel-main-boxs">
-            <div class="flex">
-              <div class="img">
-                <img src="img/contac-img.png" alt="" />
-              </div>
-              <div class="names">
-                <h6>Farrux Bozorboyev</h6>
-                <p>Senior | Web Designer</p>
-              </div>
-            </div>
-            <span>
-              Ismim Farrux UI/UX Web designerman 8yildan beri bu sohada ishlab
-              o’sib kelybman. Maqsadim Siz azizlarimni pro darajaga chiqarishni
-              maqsad qilganman
-            </span>
           </div>
         </div>
       </div>
     </div>
-    <div class="mans">
-      <div class="container">
-        <h1>Kelajagingiz uchun qayg'uramiz</h1>
-        <div class="mansa flex">
-          <div class="mansa-box">
-            <h4>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M34 22L38 26L46 18"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              O'qituvchilar
-            </h4>
-            <p>
-              O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
-              va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
-            </p>
+  </div>
+  <div class="content">
+    <div class="container">
+      <h1>Bu kurs kimlar uchun?</h1>
+      <div class="contents flex">
+        <div class="content-box">
+          <div class="content-box-tex">
+            <h5>Web dasturlashni 0dan boshlaganlar uchun</h5>
+            <span>Web dasturlashni 0 dan pro darajagacha chiqishingizga bu kurs
+              judayam katta yordam beradi.</span>
           </div>
-          <div class="mansa-box">
-            <h4>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M34 22L38 26L46 18"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              O'qituvchilar
-            </h4>
-            <p>
-              O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
-              va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
-            </p>
+        </div>
+        <div class="content-box">
+          <div class="content-box-tex">
+            <h5>Doimiy ish o’rniga ega bo’lishni xoxlovchilar uchun</h5>
+            <span>Siz o’z tajribangizni oshirishni maqsad qilgan bo’lsangiz bu
+              kurs aynan siz uchun, ha to’gri eshitdingiz siz uchun</span>
           </div>
-          <div class="mansa-box">
-            <h4>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M34 22L38 26L46 18"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              O'qituvchilar
-            </h4>
-            <p>
-              O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
-              va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
-            </p>
-          </div>
-          <div class="mansa-box">
-            <h4>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M34 22L38 26L46 18"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              O'qituvchilar
-            </h4>
-            <p>
-              O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
-              va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
-            </p>
-          </div>
-          <div class="mansa-box">
-            <h4>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M34 22L38 26L46 18"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              O'qituvchilar
-            </h4>
-            <p>
-              O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
-              va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
-            </p>
-          </div>
-          <div class="mansa-box">
-            <h4>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M34 22L38 26L46 18"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              O'qituvchilar
-            </h4>
-            <p>
-              O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
-              va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
-            </p>
-          </div>
-          <div class="mansa-box">
-            <h4>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M34 22L38 26L46 18"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              O'qituvchilar
-            </h4>
-            <p>
-              O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
-              va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
-            </p>
-          </div>
-          <div class="mansa-box">
-            <h4>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M34 22L38 26L46 18"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              O'qituvchilar
-            </h4>
-            <p>
-              O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
-              va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
-            </p>
-          </div>
-          <div class="mansa-box">
-            <h4>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M34 22L38 26L46 18"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              O'qituvchilar
-            </h4>
-            <p>
-              O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
-              va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
-            </p>
-          </div>
-          <div class="mansa-box">
-            <h4>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M34 22L38 26L46 18"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              O'qituvchilar
-            </h4>
-            <p>
-              O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
-              va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
-            </p>
-          </div>
-          <div class="mansa-box">
-            <h4>
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M34 22L38 26L46 18"
-                  stroke="#273747"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              O'qituvchilar
-            </h4>
-            <p>
-              O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
-              va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
-            </p>
+        </div>
+        <div class="content-box">
+          <div class="content-box-tex">
+            <h5>Frilancer bo’lib ishlashni xoxlaganlar uchun</h5>
+            <span>Siz bu kursimizda bemalol masofadan ishlang va o’zingiz uchun
+              ishlang va dizaynda barchani hayratlantiring</span>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="dasturs">
+    <img class="imgu" src="img/Vector 8.png" alt="" />
+    <div class="container">
+      <div class="dastur">
+        <div class="box">
+          <h1>O’quv dasturi qanday olib boriladi?</h1>
+          <h2>
+            O’quv dasturi modullarga bo’lingan holatda olib boriladi va har
+            bir modul oxirida imtixon bo’ladi. Har bir modulni alohida mentor
+            o’tadi.
+          </h2>
+        </div>
 
-    <div class="names">
-      <div class="container">
-        <div class="name flex">
-          <h1>Kursdan keyin rezyumeingiz</h1>
-          <div class="asos">
-            <div class="flex">
-              <div class="img">
-                <img src="img/contac-img.png" alt="" />
-              </div>
-              <div class="names">
-                <h6>Farrux Bozorboyev</h6>
-                <p>Senior | Web Designer</p>
-              </div>
+        <div class="modul">
+          <div class="bax">
+            <h1>1- modul</h1>
+            <div class="modul1">
+              <h2>Dasturlash asoslari</h2>
             </div>
-            <div class="a flex">
-              <div class="aa">
-                <span> ish grafik </span>
-                <p>Masofaviy ish</p>
-              </div>
-              <div class="aa">
-                <span> ish grafik </span>
-                <p>Masofaviy ish</p>
-              </div>
-              <div class="aa">
-                <span> ish grafik </span>
-                <p>Masofaviy ish</p>
-              </div>
+          </div>
+
+          <div class="bax">
+            <h1>2- modul</h1>
+            <div class="modul2">
+              <h2>Maketda ishlash</h2>
+              <span> HTML CSS Sass Git </span>
             </div>
-            <span> Masofaviy ish </span>
+          </div>
+          <div class="bax">
+            <h1>3- modul</h1>
+            <div class="modul3">
+              <h2>JavaScript</h2>
+              <span> JavaScript basic </span> <span> JavaScript DOM </span>
+              <span> JavaScript OOP </span>
+            </div>
+          </div>
+
+          <div class="bax">
+            <h1>4- modul</h1>
+            <div class="modul4">
+              <h2>VueJS</h2>
+              <span> VueJS </span> <span> NuxtJS </span>
+              <span> REST API </span>
+            </div>
+          </div>
+          <div class="bax">
+            <h1>5- modul</h1>
+
+            <div class="modul5">
+              <h2>NodeJS</h2>
+              <span> NodeJS </span> <span> ExpressJS </span>
+              <span> Loyihalash </span> <span> Clean code </span>
+            </div>
+          </div>
+          <div class="bax">
+            <h1>6- modul</h1>
+            <div class="modul6">
+              <h2>Database</h2>
+              <span> NoSQL </span> <span> SQL </span>
+            </div>
+          </div>
+          <div class="bax">
+            <h1>7- modul</h1>
+            <div class="modul7">
+              <h2>Final</h2>
+              <span> DevOPS </span> <span> Yakuniy imtixon </span>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="min">
-      <div class="container">
-        <div class="min1 flex">
-          <div class="min1-lef">
-            <h1>Kurs haqida batafsil bilib oling va ohirigacha ko’ring</h1>
-            <p>
-              Ushbu videoda kurs haqida batafsil bilib olishingiz mumkin. kursda
-              nimalar o’rgatilishi haqida bilib oling
-            </p>
-            <div class="btn flex">
-              <button>Kursga yozilish</button>
-              <button class="flex">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19.376 12.4159L8.777 19.4819C8.70171 19.5321 8.61423 19.5608 8.52389 19.5651C8.43355 19.5694 8.34373 19.5492 8.264 19.5065C8.18427 19.4638 8.1176 19.4003 8.07111 19.3227C8.02462 19.2451 8.00005 19.1564 8 19.0659V4.93395C8.00005 4.8435 8.02462 4.75477 8.07111 4.67719C8.1176 4.59961 8.18427 4.53609 8.264 4.49341C8.34373 4.45072 8.43355 4.43045 8.52389 4.43478C8.61423 4.4391 8.70171 4.46784 8.777 4.51795L19.376 11.5839C19.4445 11.6296 19.5006 11.6915 19.5395 11.764C19.5783 11.8366 19.5986 11.9176 19.5986 11.9999C19.5986 12.0823 19.5783 12.1633 19.5395 12.2359C19.5006 12.3084 19.4445 12.3703 19.376 12.4159Z"
-                    fill="#1E6BDD"
-                  />
-                </svg>
-                Videoni ko’rish
-              </button>
-            </div>
-          </div>
-          <div class="righ">
-            <img src="img/YouTube Player.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div></div>
-
-    <div class="uz">
-      <img class="img-uz" src="img/Vector 9.png" alt="" />
-      <div class="container">
-        <div class="uzz">
-          <div class="leff">
-            <button>
-              <h5>
-                Kursni yarim narxini to’lash (5%)
-                <span>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M13.172 12L8.222 7.04999L9.636 5.63599L16 12L9.636 18.364L8.222 16.95L13.172 12Z"
-                      fill="white"
-                    />
-                  </svg>
-                </span>
-              </h5>
-            </button>
-            <button>
-              <h5>
-                Kursni to’liq narxini to’lash (10%)
-                <span>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M13.172 12L8.222 7.04999L9.636 5.63599L16 12L9.636 18.364L8.222 16.95L13.172 12Z"
-                      fill="white"
-                    />
-                  </svg>
-                </span>
-              </h5>
+  <div class="section">
+    <div class="container">
+      <h5>Natija</h5>
+      <div class="selecit flex">
+        <div class="selecit-lef">
+          <h2>Lorem ipsum dolor sit amet consec amet dolor sit colo</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
+            consectetur Lorem ipsum.
+          </p>
+          <div class="btn flex">
+            <button>Kursga yozilish</button>
+            <button class="flex">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.376 12.4159L8.777 19.4819C8.70171 19.5321 8.61423 19.5608 8.52389 19.5651C8.43355 19.5694 8.34373 19.5492 8.264 19.5065C8.18427 19.4638 8.1176 19.4003 8.07111 19.3227C8.02462 19.2451 8.00005 19.1564 8 19.0659V4.93395C8.00005 4.8435 8.02462 4.75477 8.07111 4.67719C8.1176 4.59961 8.18427 4.53609 8.264 4.49341C8.34373 4.45072 8.43355 4.43045 8.52389 4.43478C8.61423 4.4391 8.70171 4.46784 8.777 4.51795L19.376 11.5839C19.4445 11.6296 19.5006 11.6915 19.5395 11.764C19.5783 11.8366 19.5986 11.9176 19.5986 11.9999C19.5986 12.0823 19.5783 12.1633 19.5395 12.2359C19.5006 12.3084 19.4445 12.3703 19.376 12.4159Z"
+                  fill="#1E6BDD" />
+              </svg>
+              Videoni ko’rish
             </button>
           </div>
-          <div class="righh">
-            <div class="tolav">
-              <h2>Kurs narxi</h2>
-              <h1>Jami: 2 000 000 UZS</h1>
-              <h5>950 000 UZS <del>1 000 000 UZS</del></h5>
-              <span>950 000 UZS / oyiga</span>
+          <div class="d flex">
+            <div class="number">
+              <h2>94K</h2>
+              <span> ishga joylashgan </span>
             </div>
-            <div class="tolov-box">
-              <h3>To’lov usullari</h3>
-              <div class="tolov-img">
-                <img src="img/payme 1.png" alt="" />
-                <img src="img/ap.png" alt="" />
-                <img src="img/x.png" alt="" />
-                <img src="img/u.png" alt="" />
-                <img src="img/a.png" alt="" />
-                <img src="img/c.png" alt="" />
+            <div class="number">
+              <h2>15K</h2>
+              <span> O’qiyotgan </span>
+            </div>
+            <div class="number">
+              <h2>2K+</h2>
+              <span> O’qiyotgan </span>
+            </div>
+          </div>
+        </div>
+        <div class="selecit-righ">
+          <img src="img/selecit.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="umd">
+    <div class="container">
+      <div class="umid flex">
+        <div class="umid-lef">
+          <img src="img/umid.png" alt="" />
+        </div>
+        <div class="umid-righ">
+          <h1>
+            Kursni tugatgandan so’ng <span>UMDSOFT </span> va
+            <span> IT Park </span>
+            tomonidan maxsus sertifikat beriladi
+          </h1>
+          <p>
+            *Bu Sertifikat ta’lim to’g’risidagi hujjat emas. Bu dasturlashni
+            qay darajada bilishingizni anglatuvchi ma’lumotnoma.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="corsel">
+    <div class="container">
+      <h1>O’quvchilar fikri</h1>
+      <div class="corsel-main flex">
+        <div class="corsel-main-boxs">
+          <div class="flex">
+            <div class="img">
+              <img src="img/contac-img.png" alt="" />
+            </div>
+            <div class="names">
+              <h6>Farrux Bozorboyev</h6>
+              <p>Senior | Web Designer</p>
+            </div>
+          </div>
+          <span>
+            Ismim Farrux UI/UX Web designerman 8yildan beri bu sohada ishlab
+            o’sib kelybman. Maqsadim Siz azizlarimni pro darajaga chiqarishni
+            maqsad qilganman
+          </span>
+        </div>
+        <div class="corsel-main-boxs">
+          <div class="flex">
+            <div class="img">
+              <img src="img/contac-img.png" alt="" />
+            </div>
+            <div class="names">
+              <h6>Farrux Bozorboyev</h6>
+              <p>Senior | Web Designer</p>
+            </div>
+          </div>
+          <span>
+            Ismim Farrux UI/UX Web designerman 8yildan beri bu sohada ishlab
+            o’sib kelybman. Maqsadim Siz azizlarimni pro darajaga chiqarishni
+            maqsad qilganman
+          </span>
+        </div>
+        <div class="corsel-main-boxs">
+          <div class="flex">
+            <div class="img">
+              <img src="img/contac-img.png" alt="" />
+            </div>
+            <div class="names">
+              <h6>Farrux Bozorboyev</h6>
+              <p>Senior | Web Designer</p>
+            </div>
+          </div>
+          <span>
+            Ismim Farrux UI/UX Web designerman 8yildan beri bu sohada ishlab
+            o’sib kelybman. Maqsadim Siz azizlarimni pro darajaga chiqarishni
+            maqsad qilganman
+          </span>
+        </div>
+        <div class="corsel-main-boxs">
+          <div class="flex">
+            <div class="img">
+              <img src="img/contac-img.png" alt="" />
+            </div>
+            <div class="names">
+              <h6>Farrux Bozorboyev</h6>
+              <p>Senior | Web Designer</p>
+            </div>
+          </div>
+          <span>
+            Ismim Farrux UI/UX Web designerman 8yildan beri bu sohada ishlab
+            o’sib kelybman. Maqsadim Siz azizlarimni pro darajaga chiqarishni
+            maqsad qilganman
+          </span>
+        </div>
+        <div class="corsel-main-boxs">
+          <div class="flex">
+            <div class="img">
+              <img src="img/contac-img.png" alt="" />
+            </div>
+            <div class="names">
+              <h6>Farrux Bozorboyev</h6>
+              <p>Senior | Web Designer</p>
+            </div>
+          </div>
+          <span>
+            Ismim Farrux UI/UX Web designerman 8yildan beri bu sohada ishlab
+            o’sib kelybman. Maqsadim Siz azizlarimni pro darajaga chiqarishni
+            maqsad qilganman
+          </span>
+        </div>
+        <div class="corsel-main-boxs">
+          <div class="flex">
+            <div class="img">
+              <img src="img/contac-img.png" alt="" />
+            </div>
+            <div class="names">
+              <h6>Farrux Bozorboyev</h6>
+              <p>Senior | Web Designer</p>
+            </div>
+          </div>
+          <span>
+            Ismim Farrux UI/UX Web designerman 8yildan beri bu sohada ishlab
+            o’sib kelybman. Maqsadim Siz azizlarimni pro darajaga chiqarishni
+            maqsad qilganman
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mans">
+    <div class="container">
+      <h1>Kelajagingiz uchun qayg'uramiz</h1>
+      <div class="mansa flex">
+        <div class="mansa-box">
+          <h4>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M34 22L38 26L46 18" stroke="#273747" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            O'qituvchilar
+          </h4>
+          <p>
+            O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
+            va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
+          </p>
+        </div>
+        <div class="mansa-box">
+          <h4>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M34 22L38 26L46 18" stroke="#273747" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            O'qituvchilar
+          </h4>
+          <p>
+            O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
+            va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
+          </p>
+        </div>
+        <div class="mansa-box">
+          <h4>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M34 22L38 26L46 18" stroke="#273747" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            O'qituvchilar
+          </h4>
+          <p>
+            O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
+            va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
+          </p>
+        </div>
+        <div class="mansa-box">
+          <h4>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M34 22L38 26L46 18" stroke="#273747" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            O'qituvchilar
+          </h4>
+          <p>
+            O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
+            va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
+          </p>
+        </div>
+        <div class="mansa-box">
+          <h4>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M34 22L38 26L46 18" stroke="#273747" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            O'qituvchilar
+          </h4>
+          <p>
+            O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
+            va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
+          </p>
+        </div>
+        <div class="mansa-box">
+          <h4>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M34 22L38 26L46 18" stroke="#273747" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            O'qituvchilar
+          </h4>
+          <p>
+            O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
+            va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
+          </p>
+        </div>
+        <div class="mansa-box">
+          <h4>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M34 22L38 26L46 18" stroke="#273747" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            O'qituvchilar
+          </h4>
+          <p>
+            O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
+            va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
+          </p>
+        </div>
+        <div class="mansa-box">
+          <h4>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M34 22L38 26L46 18" stroke="#273747" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            O'qituvchilar
+          </h4>
+          <p>
+            O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
+            va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
+          </p>
+        </div>
+        <div class="mansa-box">
+          <h4>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M34 22L38 26L46 18" stroke="#273747" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            O'qituvchilar
+          </h4>
+          <p>
+            O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
+            va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
+          </p>
+        </div>
+        <div class="mansa-box">
+          <h4>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M34 22L38 26L46 18" stroke="#273747" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            O'qituvchilar
+          </h4>
+          <p>
+            O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
+            va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
+          </p>
+        </div>
+        <div class="mansa-box">
+          <h4>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M32 42V38C32 35.8783 31.1571 33.8434 29.6568 32.3431C28.1565 30.8429 26.1217 30 24 30H9.99995C7.87822 30 5.84339 30.8429 4.3431 32.3431C2.84281 33.8434 1.99995 35.8783 1.99995 38V42"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M17 22C21.4183 22 25 18.4183 25 14C25 9.58172 21.4183 6 17 6C12.5817 6 9 9.58172 9 14C9 18.4183 12.5817 22 17 22Z"
+                stroke="#273747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M34 22L38 26L46 18" stroke="#273747" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            O'qituvchilar
+          </h4>
+          <p>
+            O'quv dasturining 70% vebinarlardan iborat: siz savollar berasiz
+            va loyihalaringiz bo'yicha fikr-mulohaza olasiz.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="names">
+    <div class="container">
+      <div class="name flex">
+        <h1>Kursdan keyin rezyumeingiz</h1>
+        <div class="asos">
+          <div class="flex">
+            <div class="bbb flex">
+              <div class="img">
+                <img src="img/contac-img.png" alt="" />
               </div>
+              <div class="names">
+                <h6>Farrux Bozorboyev</h6>
+                <p>Senior | Web Designer</p>
+              </div>
+            </div>
+            <h3>
+              9 000 000 UZS
+            </h3>
+          </div>
+
+          <div class="a flex">
+            <div class="aa">
+              <span> ish grafik </span>
+              <p>Masofaviy ish</p>
+            </div>
+            <div class="aa">
+              <span> Ta’lim olgan</span>
+              <p>EduLife, interfeys dizayni</p>
+            </div>
+            <div class="aa">
+              <span> Ish tajribasi</span>
+              <p>EduLife, dizayn ishlari</p>
+            </div>
+          </div>
+          <div class="asass">
+            <span>
+              Asosiy ko'nikmalar
+            </span>
+            <div>
+              <h2><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM11.3738 6.70711C11.7643 6.31658 11.7643 5.68342 11.3738 5.29289C10.9832 4.90237 10.3501 4.90237 9.95954 5.29289L6.99998 8.25245L6.04042 7.29289C5.6499 6.90237 5.01673 6.90237 4.62621 7.29289C4.23568 7.68342 4.23568 8.31658 4.62621 8.70711L6.29287 10.3738C6.6834 10.7643 7.31656 10.7643 7.70709 10.3738L11.3738 6.70711Z"
+                    fill="#1E6BDD" />
+                </svg>
+
+                Figma, Adobe XD, Photoshop
+              </h2>
+            </div>
+            <div>
+              <h2><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM11.3738 6.70711C11.7643 6.31658 11.7643 5.68342 11.3738 5.29289C10.9832 4.90237 10.3501 4.90237 9.95954 5.29289L6.99998 8.25245L6.04042 7.29289C5.6499 6.90237 5.01673 6.90237 4.62621 7.29289C4.23568 7.68342 4.23568 8.31658 4.62621 8.70711L6.29287 10.3738C6.6834 10.7643 7.31656 10.7643 7.70709 10.3738L11.3738 6.70711Z"
+                    fill="#1E6BDD" />
+                </svg>
+
+                Figma, Adobe XD, Photoshop
+              </h2>
+            </div>
+            <div>
+              <h2><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM11.3738 6.70711C11.7643 6.31658 11.7643 5.68342 11.3738 5.29289C10.9832 4.90237 10.3501 4.90237 9.95954 5.29289L6.99998 8.25245L6.04042 7.29289C5.6499 6.90237 5.01673 6.90237 4.62621 7.29289C4.23568 7.68342 4.23568 8.31658 4.62621 8.70711L6.29287 10.3738C6.6834 10.7643 7.31656 10.7643 7.70709 10.3738L11.3738 6.70711Z"
+                    fill="#1E6BDD" />
+                </svg>
+
+                Figma, Adobe XD, Photoshop
+              </h2>
+            </div>
+            <div>
+              <h2><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM11.3738 6.70711C11.7643 6.31658 11.7643 5.68342 11.3738 5.29289C10.9832 4.90237 10.3501 4.90237 9.95954 5.29289L6.99998 8.25245L6.04042 7.29289C5.6499 6.90237 5.01673 6.90237 4.62621 7.29289C4.23568 7.68342 4.23568 8.31658 4.62621 8.70711L6.29287 10.3738C6.6834 10.7643 7.31656 10.7643 7.70709 10.3738L11.3738 6.70711Z"
+                    fill="#1E6BDD" />
+                </svg>
+
+                Figma, Adobe XD, Photoshop
+              </h2>
+            </div>
+            <div>
+              <h2><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM11.3738 6.70711C11.7643 6.31658 11.7643 5.68342 11.3738 5.29289C10.9832 4.90237 10.3501 4.90237 9.95954 5.29289L6.99998 8.25245L6.04042 7.29289C5.6499 6.90237 5.01673 6.90237 4.62621 7.29289C4.23568 7.68342 4.23568 8.31658 4.62621 8.70711L6.29287 10.3738C6.6834 10.7643 7.31656 10.7643 7.70709 10.3738L11.3738 6.70711Z"
+                    fill="#1E6BDD" />
+                </svg>
+
+                Figma, Adobe XD, Photoshop
+              </h2>
+            </div>
+            <div>
+              <h2><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM11.3738 6.70711C11.7643 6.31658 11.7643 5.68342 11.3738 5.29289C10.9832 4.90237 10.3501 4.90237 9.95954 5.29289L6.99998 8.25245L6.04042 7.29289C5.6499 6.90237 5.01673 6.90237 4.62621 7.29289C4.23568 7.68342 4.23568 8.31658 4.62621 8.70711L6.29287 10.3738C6.6834 10.7643 7.31656 10.7643 7.70709 10.3738L11.3738 6.70711Z"
+                    fill="#1E6BDD" />
+                </svg>
+
+                Figma, Adobe XD, Photoshop
+              </h2>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="container">
-        <div class="footer">
-          <div class="footer-info flex">
-            <div class="footer-info-img">
-              <img src="img/logo.png" alt="" />
-            </div>
-            <div class="footer-info-box">
-              <h1>Sahifalar</h1>
-              <p>Tadbirlar</p>
-              <p>O’quv dasturlar</p>
-              <p>Ish topish</p>
-            </div>
-            <div class="footer-info-box">
-              <h1>Yo’nalishlar</h1>
-              <p>Dasturlash</p>
-              <p>Marketing</p>
-              <p>Dizayn</p>
-            </div>
-            <div class="footer-info-box">
-              <h1>Sahifalar</h1>
-              <p>Boshqaruv</p>
-              <p>Analitika</p>
-              <p>Ijodiy</p>
-            </div>
-            <div class="footer-info-box">
-              <h1>Call center</h1>
-              <p>+998-00-000-00-00</p>
-            </div>
-            <div class="footer-info-box">
-              <h1>Tashkent</h1>
-              <p>+998-00-123-45-67</p>
-            </div>
+  </div>
+  <div class="mmm">
+    <div class="container">
+      <h1>
+        Natijalar
+      </h1>
+      <div class="flex">
+
+        <div>
+          <img src="img/ 76.png" alt="">
+          <p>
+            Site.domen
+          </p>
+        </div>
+        <div>
+          <img src="img/ 77.png" alt="">
+          <p>
+            Site.domen
+          </p>
+        </div>
+        <div>
+          <img src="img/ 78.png" alt="">
+          <p>
+            Site.domen
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="min">
+    <div class="container">
+      <div class="min1 flex">
+        <div class="min1-lef">
+          <h1>Kurs haqida batafsil bilib oling va ohirigacha ko’ring</h1>
+          <p>
+            Ushbu videoda kurs haqida batafsil bilib olishingiz mumkin. kursda
+            nimalar o’rgatilishi haqida bilib oling
+          </p>
+          <div class="btn flex">
+            <button>Kursga yozilish</button>
+            <button class="flex">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.376 12.4159L8.777 19.4819C8.70171 19.5321 8.61423 19.5608 8.52389 19.5651C8.43355 19.5694 8.34373 19.5492 8.264 19.5065C8.18427 19.4638 8.1176 19.4003 8.07111 19.3227C8.02462 19.2451 8.00005 19.1564 8 19.0659V4.93395C8.00005 4.8435 8.02462 4.75477 8.07111 4.67719C8.1176 4.59961 8.18427 4.53609 8.264 4.49341C8.34373 4.45072 8.43355 4.43045 8.52389 4.43478C8.61423 4.4391 8.70171 4.46784 8.777 4.51795L19.376 11.5839C19.4445 11.6296 19.5006 11.6915 19.5395 11.764C19.5783 11.8366 19.5986 11.9176 19.5986 11.9999C19.5986 12.0823 19.5783 12.1633 19.5395 12.2359C19.5006 12.3084 19.4445 12.3703 19.376 12.4159Z"
+                  fill="#1E6BDD" />
+              </svg>
+              Videoni ko’rish
+            </button>
           </div>
-          <div class="footer-bottom flex">
-            <div class="footer-bottom-lef">
-              <p>Barcha huquqlardan himoyalangan</p>
-              <p>© Edulife, 2021</p>
-            </div>
-            <div class="footer-bottom-rig">
-              <span
-                ><svg
-                  width="44"
-                  height="44"
-                  viewBox="0 0 44 44"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="44" height="44" rx="22" fill="#C7DDFF" />
-                  <path
-                    d="M27 12H17C14.2386 12 12 14.2386 12 17V27C12 29.7614 14.2386 32 17 32H27C29.7614 32 32 29.7614 32 27V17C32 14.2386 29.7614 12 27 12Z"
-                    stroke="#1E6BDD"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M26 21.37C26.1234 22.2022 25.9813 23.0522 25.5938 23.799C25.2063 24.5458 24.5932 25.1514 23.8416 25.5297C23.0901 25.9079 22.2385 26.0396 21.4078 25.9059C20.5771 25.7723 19.8098 25.3801 19.2149 24.7852C18.6199 24.1902 18.2277 23.4229 18.0941 22.5922C17.9604 21.7615 18.0921 20.9099 18.4703 20.1584C18.8486 19.4069 19.4542 18.7937 20.201 18.4062C20.9478 18.0187 21.7978 17.8766 22.63 18C23.4789 18.1259 24.2649 18.5215 24.8717 19.1283C25.4785 19.7351 25.8741 20.5211 26 21.37Z"
-                    stroke="#1E6BDD"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M27.5 16.5H27.51"
-                    stroke="#1E6BDD"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
+        </div>
+        <div class="righ">
+          <img src="img/YouTube Player.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="xa">
+    <div class="container">
+
+      <h3>
+        Full Stack Web dasturlash kursi
+      </h3>
+      <h5>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16 29.3334C8.63596 29.3334 2.66663 23.3641 2.66663 16.0001C2.66663 8.63608 8.63596 2.66675 16 2.66675C23.364 2.66675 29.3333 8.63608 29.3333 16.0001C29.3333 23.3641 23.364 29.3334 16 29.3334ZM16 26.6667C18.8289 26.6667 21.542 25.5429 23.5424 23.5426C25.5428 21.5422 26.6666 18.8291 26.6666 16.0001C26.6666 13.1711 25.5428 10.458 23.5424 8.45761C21.542 6.45722 18.8289 5.33341 16 5.33341C13.171 5.33341 10.4579 6.45722 8.45749 8.45761C6.4571 10.458 5.33329 13.1711 5.33329 16.0001C5.33329 18.8291 6.4571 21.5422 8.45749 23.5426C10.4579 25.5429 13.171 26.6667 16 26.6667ZM14.6706 21.3334L9.01329 15.6761L10.8986 13.7907L14.6706 17.5627L22.212 10.0201L24.0986 11.9054L14.6706 21.3334Z"
+            fill="#1E6BDD" />
+        </svg>
+
+        Frontend 4 oy ( <b> 2 400 000 </b> so’m) 600 000 UZS/oyiga
+      </h5>
+      <h5>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16 29.3334C8.63596 29.3334 2.66663 23.3641 2.66663 16.0001C2.66663 8.63608 8.63596 2.66675 16 2.66675C23.364 2.66675 29.3333 8.63608 29.3333 16.0001C29.3333 23.3641 23.364 29.3334 16 29.3334ZM16 26.6667C18.8289 26.6667 21.542 25.5429 23.5424 23.5426C25.5428 21.5422 26.6666 18.8291 26.6666 16.0001C26.6666 13.1711 25.5428 10.458 23.5424 8.45761C21.542 6.45722 18.8289 5.33341 16 5.33341C13.171 5.33341 10.4579 6.45722 8.45749 8.45761C6.4571 10.458 5.33329 13.1711 5.33329 16.0001C5.33329 18.8291 6.4571 21.5422 8.45749 23.5426C10.4579 25.5429 13.171 26.6667 16 26.6667ZM14.6706 21.3334L9.01329 15.6761L10.8986 13.7907L14.6706 17.5627L22.212 10.0201L24.0986 11.9054L14.6706 21.3334Z"
+            fill="#1E6BDD" />
+        </svg>
+
+        Backend 5 oy ( <b> 3 000 000 </b>so’m) 600 000 UZS/oyiga
+      </h5>
+      <h5>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16 29.3334C8.63596 29.3334 2.66663 23.3641 2.66663 16.0001C2.66663 8.63608 8.63596 2.66675 16 2.66675C23.364 2.66675 29.3333 8.63608 29.3333 16.0001C29.3333 23.3641 23.364 29.3334 16 29.3334ZM16 26.6667C18.8289 26.6667 21.542 25.5429 23.5424 23.5426C25.5428 21.5422 26.6666 18.8291 26.6666 16.0001C26.6666 13.1711 25.5428 10.458 23.5424 8.45761C21.542 6.45722 18.8289 5.33341 16 5.33341C13.171 5.33341 10.4579 6.45722 8.45749 8.45761C6.4571 10.458 5.33329 13.1711 5.33329 16.0001C5.33329 18.8291 6.4571 21.5422 8.45749 23.5426C10.4579 25.5429 13.171 26.6667 16 26.6667ZM14.6706 21.3334L9.01329 15.6761L10.8986 13.7907L14.6706 17.5627L22.212 10.0201L24.0986 11.9054L14.6706 21.3334Z"
+            fill="#1E6BDD" />
+        </svg>
+
+        DevOPS va Ma’lumotlar xavfsizligi 2 oy ( <b>3 000 000</b>  so’m) 1 000 000 UZS/oyiga
+      </h5>
+      <h5>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16 29.3334C8.63596 29.3334 2.66663 23.3641 2.66663 16.0001C2.66663 8.63608 8.63596 2.66675 16 2.66675C23.364 2.66675 29.3333 8.63608 29.3333 16.0001C29.3333 23.3641 23.364 29.3334 16 29.3334ZM16 26.6667C18.8289 26.6667 21.542 25.5429 23.5424 23.5426C25.5428 21.5422 26.6666 18.8291 26.6666 16.0001C26.6666 13.1711 25.5428 10.458 23.5424 8.45761C21.542 6.45722 18.8289 5.33341 16 5.33341C13.171 5.33341 10.4579 6.45722 8.45749 8.45761C6.4571 10.458 5.33329 13.1711 5.33329 16.0001C5.33329 18.8291 6.4571 21.5422 8.45749 23.5426C10.4579 25.5429 13.171 26.6667 16 26.6667ZM14.6706 21.3334L9.01329 15.6761L10.8986 13.7907L14.6706 17.5627L22.212 10.0201L24.0986 11.9054L14.6706 21.3334Z"
+            fill="#1E6BDD" />
+        </svg>
+
+        Ingiliz tili 4 oy ( <b>1 200 000</b>  so’m) 300 000 UZS/oyiga
+      </h5>
+      <div>
+        <span>
+          Jami: 15oy 9 800 000 UZS
+        </span>
+        <h1>
+          15-yanvargacha kurslarga yoziling va
+          bonuslarni qo’lga kiriting
+        </h1>
+        <span>
+          7oy 4 550 000 UZS 
+        </span>
+        <h1>
+          evaziga barchasini o’rganing
+        </h1>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="uz">
+    <img class="img-uz" src="img/Vector 9.png" alt="" />
+    <div class="container">
+      <div class="uzz">
+        <div class="leff">
+          <button>
+            <h5>
+              Kursni yarim narxini to’lash (5%)
+              <span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.172 12L8.222 7.04999L9.636 5.63599L16 12L9.636 18.364L8.222 16.95L13.172 12Z"
+                    fill="white" />
                 </svg>
               </span>
-              <span
-                ><svg
-                  width="44"
-                  height="44"
-                  viewBox="0 0 44 44"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="44" height="44" rx="22" fill="#C7DDFF" />
-                  <path
-                    d="M28 12H25C23.6739 12 22.4021 12.5268 21.4645 13.4645C20.5268 14.4021 20 15.6739 20 17V20H17V24H20V32H24V24H27L28 20H24V17C24 16.7348 24.1054 16.4804 24.2929 16.2929C24.4804 16.1054 24.7348 16 25 16H28V12Z"
-                    stroke="#1E6BDD"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
+            </h5>
+          </button>
+          <button>
+            <h5>
+              Kursni to’liq narxini to’lash (10%)
+              <span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.172 12L8.222 7.04999L9.636 5.63599L16 12L9.636 18.364L8.222 16.95L13.172 12Z"
+                    fill="white" />
                 </svg>
               </span>
-              <span
-                ><svg
-                  width="44"
-                  height="44"
-                  viewBox="0 0 44 44"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="44" height="44" rx="22" fill="#C7DDFF" />
-                  <path
-                    d="M13 21L32 12L23 31L21 23L13 21Z"
-                    stroke="#1E6BDD"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </span>
-              <span
-                ><svg
-                  width="44"
-                  height="44"
-                  viewBox="0 0 44 44"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="44" height="44" rx="22" fill="#C7DDFF" />
-                  <path
-                    d="M32.54 16.42C32.4212 15.9454 32.1793 15.5106 31.8386 15.1594C31.498 14.8082 31.0707 14.5532 30.6 14.42C28.88 14 22 14 22 14C22 14 15.12 14 13.4 14.46C12.9292 14.5932 12.502 14.8482 12.1613 15.1994C11.8207 15.5506 11.5788 15.9854 11.46 16.46C11.1452 18.2056 10.9912 19.9763 11 21.75C10.9888 23.537 11.1428 25.3213 11.46 27.08C11.591 27.5398 11.8383 27.9581 12.1781 28.2945C12.518 28.6308 12.9388 28.8738 13.4 29C15.12 29.46 22 29.46 22 29.46C22 29.46 28.88 29.46 30.6 29C31.0707 28.8668 31.498 28.6118 31.8386 28.2606C32.1793 27.9094 32.4212 27.4746 32.54 27C32.8524 25.2676 33.0063 23.5103 33 21.75C33.0112 19.963 32.8572 18.1787 32.54 16.42V16.42Z"
-                    stroke="#1E6BDD"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M19.75 25.02L25.5 21.75L19.75 18.48V25.02Z"
-                    stroke="#1E6BDD"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </span>
+            </h5>
+          </button>
+        </div>
+        <div class="righh">
+          <div class="tolav">
+            <h2>Kurs narxi</h2>
+            <h1>Jami: 2 000 000 UZS</h1>
+            <h5>950 000 UZS <del>1 000 000 UZS</del></h5>
+            <span>950 000 UZS / oyiga</span>
+          </div>
+          <div class="tolov-box">
+            <h3>To’lov usullari</h3>
+            <div class="tolov-img">
+              <img src="img/payme 1.png" alt="" />
+              <img src="img/ap.png" alt="" />
+              <img src="img/x.png" alt="" />
+              <img src="img/u.png" alt="" />
+              <img src="img/a.png" alt="" />
+              <img src="img/c.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footer-info flex">
+          <div class="footer-info-img">
+            <img src="img/logo.png" alt="" />
+          </div>
+          <div class="footer-info-box">
+            <h1>Sahifalar</h1>
+            <p>Tadbirlar</p>
+            <p>O’quv dasturlar</p>
+            <p>Ish topish</p>
+          </div>
+          <div class="footer-info-box">
+            <h1>Yo’nalishlar</h1>
+            <p>Dasturlash</p>
+            <p>Marketing</p>
+            <p>Dizayn</p>
+          </div>
+          <div class="footer-info-box">
+            <h1>Sahifalar</h1>
+            <p>Boshqaruv</p>
+            <p>Analitika</p>
+            <p>Ijodiy</p>
+          </div>
+          <div class="footer-info-box">
+            <h1>Call center</h1>
+            <p>+998-00-000-00-00</p>
+          </div>
+          <div class="footer-info-box">
+            <h1>Tashkent</h1>
+            <p>+998-00-123-45-67</p>
+          </div>
+        </div>
+        <div class="footer-bottom flex">
+          <div class="footer-bottom-lef">
+            <p>Barcha huquqlardan himoyalangan</p>
+            <p>© Edulife, 2021</p>
+          </div>
+          <div class="footer-bottom-rig">
+            <span><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="44" height="44" rx="22" fill="#C7DDFF" />
+                <path
+                  d="M27 12H17C14.2386 12 12 14.2386 12 17V27C12 29.7614 14.2386 32 17 32H27C29.7614 32 32 29.7614 32 27V17C32 14.2386 29.7614 12 27 12Z"
+                  stroke="#1E6BDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M26 21.37C26.1234 22.2022 25.9813 23.0522 25.5938 23.799C25.2063 24.5458 24.5932 25.1514 23.8416 25.5297C23.0901 25.9079 22.2385 26.0396 21.4078 25.9059C20.5771 25.7723 19.8098 25.3801 19.2149 24.7852C18.6199 24.1902 18.2277 23.4229 18.0941 22.5922C17.9604 21.7615 18.0921 20.9099 18.4703 20.1584C18.8486 19.4069 19.4542 18.7937 20.201 18.4062C20.9478 18.0187 21.7978 17.8766 22.63 18C23.4789 18.1259 24.2649 18.5215 24.8717 19.1283C25.4785 19.7351 25.8741 20.5211 26 21.37Z"
+                  stroke="#1E6BDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M27.5 16.5H27.51" stroke="#1E6BDD" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="44" height="44" rx="22" fill="#C7DDFF" />
+                <path
+                  d="M28 12H25C23.6739 12 22.4021 12.5268 21.4645 13.4645C20.5268 14.4021 20 15.6739 20 17V20H17V24H20V32H24V24H27L28 20H24V17C24 16.7348 24.1054 16.4804 24.2929 16.2929C24.4804 16.1054 24.7348 16 25 16H28V12Z"
+                  stroke="#1E6BDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="44" height="44" rx="22" fill="#C7DDFF" />
+                <path d="M13 21L32 12L23 31L21 23L13 21Z" stroke="#1E6BDD" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="44" height="44" rx="22" fill="#C7DDFF" />
+                <path
+                  d="M32.54 16.42C32.4212 15.9454 32.1793 15.5106 31.8386 15.1594C31.498 14.8082 31.0707 14.5532 30.6 14.42C28.88 14 22 14 22 14C22 14 15.12 14 13.4 14.46C12.9292 14.5932 12.502 14.8482 12.1613 15.1994C11.8207 15.5506 11.5788 15.9854 11.46 16.46C11.1452 18.2056 10.9912 19.9763 11 21.75C10.9888 23.537 11.1428 25.3213 11.46 27.08C11.591 27.5398 11.8383 27.9581 12.1781 28.2945C12.518 28.6308 12.9388 28.8738 13.4 29C15.12 29.46 22 29.46 22 29.46C22 29.46 28.88 29.46 30.6 29C31.0707 28.8668 31.498 28.6118 31.8386 28.2606C32.1793 27.9094 32.4212 27.4746 32.54 27C32.8524 25.2676 33.0063 23.5103 33 21.75C33.0112 19.963 32.8572 18.1787 32.54 16.42V16.42Z"
+                  stroke="#1E6BDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.75 25.02L25.5 21.75L19.75 18.48V25.02Z" stroke="#1E6BDD" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
